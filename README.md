@@ -10,7 +10,7 @@ This is official implementation of "[Feed Formula Optimization Based on Backprop
 
 
 # Framework
-![The overall pipeline of the FeedMaster](https://github.com/SheepBreedingLaboratory/FeedMaster/blob/main/Figure/Flowchart.jpg)
+![The overall pipeline of the FeedMaster](https://github.com/SheepBreedingLab-HZAU/FeedMaster/blob/main/Figure/Flowchart.jpg)
 
 
 #  Paper Your Data
@@ -18,23 +18,29 @@ This is official implementation of "[Feed Formula Optimization Based on Backprop
  - The data is passed into the program in the form of a JSON file.
  - After placing the specified JSON file in the "files" folder, run Main.py to calculate the feed formula
  - The conf file contains sections such as [Standard], [Resource_n], and [Initial Feed Formula].
-## [Standard] includes three parts: StandTitle, Standard, and StandWeight
-### 
+ - [Standard] includes three parts: StandTitle, Standard, and StandWeight
+
+``` 
  - StandTitle is the name of the nutritional components in the feeding standards.
  - You can enter any number of nutrients, separated by commas between them	
-### 
+ 
  - Standard is the content of each nutritional components in the feeding standard.
  - The quantity must be consistent with StandTitle, separated by commas.
-###
+
  - StandWeight is the weight of each nutritional component in the feeding standard, with a default value of 1. 
  - The quantity must be consistent with StandTitle, separated by commas
+```
 
-## The nutritional composition, price, and usage restrictions of feed ingredients are entered in [Resource_n], where n is a variable. Please specify different n for different feed ingredients, otherwise it may cause the program to fail to execute.
+ - The nutritional composition, price, and usage restrictions of feed ingredients are entered in [Resource_n], where n is a variable. Please specify different n for different feed ingredients, otherwise it may cause the program to fail to execute.
+
+``` 
  -  Each [Resource_n] section contains four items: Name, Price, Nutrition Content, and Usage Limit
  -  The quantity of numbers entered in the Nutrition Content must be consistent with the StandTitle
-## [Initial Feed Formula] is an optional parameter. If there is no input, the program will give a default value
+```
 
-## 2 Start optimizing feed formulation
+ - [Initial Feed Formula] is an optional parameter. If there is no input, the program will give a default value
+
+# 2 Start optimizing feed formulation
 
 ```
  python Main.py
