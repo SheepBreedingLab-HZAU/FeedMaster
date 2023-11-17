@@ -42,10 +42,10 @@ This is official implementation of "[Feed Formula Optimization Based on Backprop
 
 # 2 Start optimizing feed formulation
 
-```
+```diff
 - python Main.py
 
-+If you have any questions, please contact Ling Sun,E-mail: ling.sun-01@qq.com
++ If you have any questions, please contact Ling Sun,E-mail: ling.sun-01@qq.com
 ```
 
 
