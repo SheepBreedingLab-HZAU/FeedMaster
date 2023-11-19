@@ -12,8 +12,6 @@
 
 # Licensed under the MIT license;
 import os
-os.chdir(r'F:\01_study\15  “料链”配方专家系统\Data\计算程序\py_open')
-# import Cal_FormulaTensor_runtime_modify20220311 as Cal_FormulaTensor_runtime
 from Formula_Class import calSLPF
 from io_interface import io_interface
 from Formula_Class import SentToUserRuntimeError,MyRuntimeError
