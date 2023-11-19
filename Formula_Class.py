@@ -241,21 +241,7 @@ def calSLPF(data,stand,standWeight,ini_formula,show=0,process=[0,0]):
         #     print("\tgrads   =\t{}\n\tNewmodeVar=\t{}".format(np.array(grads),np.array(model.variables[0])))
         modify.autoModify()
         global_step.assign_add(1)
-        # if i % 1==0:
-        #     print("\tModifyModeVar=\t{}\n\n\n\n\n\n".format(np.array(model.variables[0])))
-    
-        
-        # print(next(lt))
-    # except MyRuntimeError as e:
-    #     print("错误类型是{}\n发生错误的文件是{}\n发生错误的行数是{}\n".format(e.__class__,e.__traceback__.tb_frame.f_globals["__file__"],e.__traceback__.tb_lineno))
-    # except SentToUserRuntimeError as e:
-    #     aaa.append(e)
-    #     print(str(e.__class__))
-    #     print(e)
-    
-        
-    # for i in range(200):
-    #     print(next(lt))
+       
     #比对，并挑出符合要求，且价格最低的饲料配方
     def comp(x,y):
         return x[0]-y[0]
